@@ -41,6 +41,7 @@ end # end valid_move
 
 def move(board, index, token = "X")
   board[index.to_i] = token
+  return board
 end # end move
 
 def turn(board)
