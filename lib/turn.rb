@@ -24,14 +24,14 @@ def valid_move?(board, index)
   end # end position_taken?
 
   def on_board?(ind)
-    if (ind.between(0,8) == true)
+    if (ind.between?(0,8) == true)
       return true
     else
       return false
     end
   end # end on_board?
 
-  if (position_taken(board, index) == false && on_board(index) == true)
+  if (position_taken?(board, index)) == false && (on_board?(index) == true)
     return true
   else
     return false
