@@ -9,7 +9,7 @@ end # end board
 
 def input_to_index(input)
   index = input.to_i
-  index = index - 1
+  index -= 1
   return index
 end # end input_to_index
 
